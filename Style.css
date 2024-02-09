@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap");
+body {
+  font-family: "Cairo", sans-serif;
+}
+:root {
+  --circle-btn-bg: #ffbb38;
+  --circle-btn-text: #000000;
+  --circle-btn-text-alt: #2e2d2d;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.content {
+  display: flex;
+}
+.content .left-side {
+  text-align: left;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.content .left-side img {
+  width: 434px;
+  height: 236px;
+  display: block;
+  padding-bottom: 20px;
+  margin-right: auto;
+  max-width: 100%;
+}
+.content .left-side p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+}
+.content .left-side p.bold {
+  font-weight: bold;
+}
+.content .left-side p.no-bold {
+  opacity: 0.75;
+}
+.content .left-side p.last {
+  color: var(--circle-btn-bg);
+}
+.content .right-side {
+  width: 47vw;
+  padding-right: 22px;
+  padding-left: 23px;
+  padding-top: 250px;
+  text-align: center;
+}
+.discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .right-side p.dis {
+  color: #8d8f92;
+  text-decoration: line-through;
+  font-size: 50px;
+}
+.content .right-side p.real {
+  font-size: 80px;
+  color: var(--circle-btn-bg);
+}
+.join {
+  background-color: var(--circle-btn-bg);
+  color: var(--circle-btn-text);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.81rem 3.87rem;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  transition: 0.4s;
+  margin-right: 5px;
+  position: relative;
+  font-size: 30px;
+}
+.join:hover {
+  background-color: transparent;
+  border: 2px solid var(--circle-btn-bg);
+  color: white;
+}
+@media (max-width: 992px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .content .left-side {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .content .right-side {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .content .right-side .join {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+}
